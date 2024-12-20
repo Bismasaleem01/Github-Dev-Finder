@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./dev.jpeg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <title>Github Dev Finder</title>
+</head>
+<body>
+    <div id="github">
+        <div class="searchBar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Enter Username..." id="searchField">
+          <button onclick="getUser()">Search</button>
+       </div>
+        <div class="secondary-container">
+            <div class="profile-container">
+                <div id="image-container"><img src="" id="imageSelf" alt=""></div>
+                <div id="name-container"></div>
+            </div>
+            <div id="repo-container">
+                <div id="repos">Repos <br> <span id="noOfRepos"></span></div>
+                <div id="followers">Followers <br> <span id="noOfFollowers"></span></div>
+                <div id="following">Following <br> <span id="noOfFollwoing"></span></div>
+             </div>
+             <div id="social-container">
+                <div id="location"><i class="fa-solid fa-location-arrow"></i><span id="locationBox"></span></div>
+                <div id="blog"><i class="fa-solid fa-link"></i><span id="blogBox"></span></div>
+                <div id="email"><i class="fa-solid fa-envelope"></i><span id="emailBox"></span></div>
+                <div id="company"><i class="fa-solid fa-building"></i><span id="companyBox"></span></div>
+             </div>
+        </div>             
+    </div>
+
+</body>
+<script src="./main.js"></script>
+<script src="https://kit.fontawesome.com/f6142824c3.js"></script>
+</html>
